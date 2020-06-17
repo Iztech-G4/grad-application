@@ -2,9 +2,6 @@ const functions = require('firebase-functions');
 
 var admin = require("firebase-admin");
 
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
-
 exports.sendAcceptanceEmail = functions.https.onRequest(async (request, response) => {
     const myURL = new URL("https://www.xyz.com" + request.url);
     var term = myURL.searchParams.get('term');
