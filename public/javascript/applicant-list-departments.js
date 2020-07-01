@@ -1,8 +1,3 @@
-
-
-
-
-
 function getDepartments() {
     firebase.database().ref('departments').once('value').then(function (departments) {
         var allDepartments = new Array();

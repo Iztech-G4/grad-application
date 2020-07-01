@@ -1,6 +1,10 @@
 const functions = require('firebase-functions');
 
+
 var admin = require("firebase-admin");
+
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey('');
 
 exports.sendAcceptanceEmail = functions.https.onRequest(async (request, response) => {
     const myURL = new URL("https://www.xyz.com" + request.url);
