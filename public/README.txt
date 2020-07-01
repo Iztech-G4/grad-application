@@ -18,4 +18,3 @@ Folder hierarchy:
         |-> department folder :
 
         |-> grad-school folder : 
-asdads
